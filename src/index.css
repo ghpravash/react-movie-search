@@ -10,28 +10,20 @@ html {
 body {
   margin: 0;
   padding: 0;
-  background:url(bg.jpg) no-repeat;
-  color: #333;
-}
-
-p {
-  font-size: 1.6rem;
-}
-
-small {
-  font-size: 1.2rem;
+  background-color: #151729;
 }
 
 .container {
   margin: 0 auto;
   max-width: 1000px;
   padding: 40px;
+  padding-bottom: 10px;
 }
 
 .title {
   font-size: 4.4rem;
   text-align: center;
-  color: bisque;
+  color:white;
 }
 
 /******************** Searchbox form *********/
@@ -46,7 +38,7 @@ small {
   font-size: 2.2rem;
   margin-bottom: 0.2rem;
   text-transform: uppercase;
-  color: beige;
+  color:#ff2d85;
 }
 
 .input {
@@ -62,7 +54,7 @@ small {
   background-color: rgba(1,1,1,1);
   color: white;
   padding: 1rem 2rem;
-  border: 1px solid rgba(255,255,255);
+  border: 1px solid #ff2d85;
   border-radius:20px;
   font-size: 1.4rem;
   cursor: pointer;
@@ -89,17 +81,40 @@ small {
   margin-top: 4rem;
 }
 .card{
+  opacity:0.9;
   padding: 2rem 4rem;
   border-radius: 10px;
-  box-shadow: 1px 1px 5px rgba(0,0,0,0.75);
+  box-shadow: 5px 8px 8px #ff2d85;
   margin-bottom: 2rem;
-  background-color: white;
+  background-color: transparent;
 }
 .card--title {
   margin-bottom: 0.5rem;
   font-size: 3.2rem;
+  color: #ddd;
 }
 .card--image {
   margin: 0 auto; 
   display: block;
+}
+
+p {
+  color:#ddd;
+  font-size: 2rem;
+}
+.card--desc:hover
+{
+	opacity: 1;
+	color: rgb(236, 169, 208);
+	transform: translateY(-10px);
+	transition:3s;
+  cursor:Pointer;
+}
+
+.card:hover {
+  opacity:1;
+  background-color: #3d081e;
+  cursor: pointer;
+  transform: translateY(-10px);
+	transition:3s;
 }
